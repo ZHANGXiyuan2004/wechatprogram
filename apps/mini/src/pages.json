@@ -1,0 +1,46 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "表达训练",
+        "navigationBar": {
+          "titleText": "表达训练",
+          "style": "default"
+        }
+      }
+    },
+    {
+      "path": "pages/record/index",
+      "style": {
+        "navigationBarTitleText": "语音演练",
+        "navigationBar": {
+          "titleText": "语音演练",
+          "style": "default"
+        }
+      }
+    },
+    {
+      "path": "pages/review/index",
+      "style": {
+        "navigationBarTitleText": "智能复盘",
+        "navigationBar": {
+          "titleText": "智能复盘",
+          "style": "default"
+        }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "ASRLLM",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "navigationBar": {
+      "titleText": "ASRLLM",
+      "textStyle": "black",
+      "backgroundColor": "#FFFFFF",
+      "style": "default"
+    },
+    "backgroundColor": "#F8FAFC"
+  }
+}

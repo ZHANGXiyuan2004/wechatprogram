@@ -1,0 +1,24 @@
+{
+  "name": "asrllm-monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Enterprise oral expression training system (UniApp + Web + NestJS)",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev:api": "pnpm --filter @asrllm/api dev",
+    "dev:admin": "pnpm --filter @asrllm/admin-web dev",
+    "dev:mini": "pnpm --filter @asrllm/mini dev",
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "lint": "pnpm -r lint"
+  },
+  "pnpm": {
+    "packageExtensions": {
+      "@dcloudio/vite-plugin-uni@*": {
+        "peerDependencies": {
+          "uni-cli-shared": "*"
+        }
+      }
+    }
+  }
+}

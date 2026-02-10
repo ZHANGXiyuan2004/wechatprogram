@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: asrllm-config
+  namespace: asrllm
+data:
+  NODE_ENV: production
+  PORT: '3000'
+  LLM_PROVIDER: tencent
+  ASR_PROVIDER: tencent
+  MINIO_ENDPOINT: http://minio:9000
+  REDIS_URL: redis://redis:6379
+  DATA_RETENTION_DAYS: '90'

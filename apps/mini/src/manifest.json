@@ -1,0 +1,18 @@
+{
+  "name": "企业内部口语训练",
+  "appid": "__UNI__ASRLLM",
+  "description": "企业内部表达训练与复盘",
+  "versionName": "0.1.0",
+  "versionCode": "100",
+  "mp-weixin": {
+    "appid": "wx-demo-appid",
+    "setting": {
+      "urlCheck": false
+    },
+    "permission": {
+      "scope.record": {
+        "desc": "用于录制口语训练音频"
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<view class="page">
+  <view class="card">
+    <view class="title">调试壳已生成</view>
+    <view class="desc">点击按钮后会打开本机 H5 联调页面。</view>
+    <view class="desc">请先在电脑上执行 01-启动系统.command。</view>
+    <button class="btn" bindtap="goH5">打开训练页面</button>
+  </view>
+</view>

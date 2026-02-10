@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/h5/index"
+  ],
+  "window": {
+    "navigationBarTitleText": "ASRLLM 调试壳",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  }
+}

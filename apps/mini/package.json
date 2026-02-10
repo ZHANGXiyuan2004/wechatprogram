@@ -1,0 +1,32 @@
+{
+  "name": "@asrllm/mini",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:mp-weixin": "uni build -p mp-weixin",
+    "test": "echo \"mini app tests pending\"",
+    "lint": "echo \"no lint config\""
+  },
+  "dependencies": {
+    "@asrllm/shared-types": "workspace:*",
+    "@dcloudio/uni-components": "3.0.0-alpha-3000020210521001",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-3000020210521001",
+    "@dcloudio/uni-app": "3.0.0-alpha-3000020210521001",
+    "@dcloudio/uni-h5": "2.0.2-4080720251210002",
+    "@dcloudio/uni-h5-vue": "3.0.0-alpha-3000020210521001",
+    "@dcloudio/uni-ui": "1.4.30",
+    "pinia": "^2.3.0",
+    "uni-cli-shared": "npm:@dcloudio/uni-cli-shared@3.0.0-alpha-3000020210521001",
+    "vue": "3.5.28"
+  },
+  "devDependencies": {
+    "@dcloudio/types": "3.0.15",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-3000020210521001",
+    "@vitejs/plugin-vue": "1.10.2",
+    "typescript": "^5.7.3",
+    "vite": "2.9.18"
+  }
+}

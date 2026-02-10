@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asrllm-api
+  namespace: asrllm
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: asrllm-api
+  template:
+    metadata:
+      labels:
+        app: asrllm-api
+    spec:
+      containers:
+        - name: api
+          image: asrllm/api:0.1.0
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: asrllm-config
+            - secretRef:
+                name: asrllm-secret
+          readinessProbe:
+            httpGet:
+              path: /api/v1/manager/dashboard
+              port: 3000
+            initialDelaySeconds: 8
+            periodSeconds: 10
+          resources:
+            requests:
+              cpu: 200m
+              memory: 256Mi
+            limits:
+              cpu: 1000m
+              memory: 1024Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: asrllm-api
+  namespace: asrllm
+spec:
+  selector:
+    app: asrllm-api
+  ports:
+    - port: 3000
+      targetPort: 3000

@@ -1,0 +1,18 @@
+{
+  "description": "ASRLLM mini program output",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": false
+  },
+  "compileType": "miniprogram",
+  "appid": "wx1234567890abcdef",
+  "projectname": "asrllm-mini",
+  "libVersion": "latest",
+  "miniprogramRoot": "./"
+}

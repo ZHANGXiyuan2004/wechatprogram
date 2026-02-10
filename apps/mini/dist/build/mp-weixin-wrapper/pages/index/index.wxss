@@ -1,0 +1,25 @@
+.page {
+  padding: 24rpx;
+}
+.card {
+  background: #fff;
+  border-radius: 16rpx;
+  border: 1px solid #e2e8f0;
+  padding: 24rpx;
+}
+.title {
+  font-size: 34rpx;
+  font-weight: 700;
+  margin-bottom: 12rpx;
+}
+.desc {
+  color: #475569;
+  margin-bottom: 8rpx;
+  line-height: 1.6;
+}
+.btn {
+  margin-top: 14rpx;
+  background: #0ea5e9;
+  color: #fff;
+  border-radius: 12rpx;
+}
